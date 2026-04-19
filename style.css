@@ -205,3 +205,69 @@ nav ul li a {
     color: #C5A059;
     padding-left: 5px;
 }
+/* Container dos botões */
+.provas-grid {
+    display: flex;
+    flex-direction: column; /* Botões um embaixo do outro */
+    gap: 10px;             /* Espaçamento entre os botões */
+    margin-top: 15px;
+}
+
+/* Estilo individual do botão */
+.btn-prova {
+    display: block;
+    background-color: #f8f9fa;
+    color: #003366;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.btn-prova:hover {
+    background-color: #003366;
+    color: #ffffff;
+    border-color: #003366;
+    transform: translateX(5px); /* Pequeno movimento para a direita */
+}
+
+/* Estilo especial para o "Ver todas" */
+.ver-todas {
+    background-color: transparent;
+    border: none;
+    color: #C5A059;
+    font-style: italic;
+}
+
+.ver-todas:hover {
+    background-color: transparent;
+    color: #a3854a;
+    transform: none;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .provas-box {
+        position: relative; 
+        top: 0;
+        right: 0;
+        width: 100%;      
+        margin-top: 20px;
+        box-sizing: border-box;
+    }
+    
+    .provas-grid {
+        flex-direction: row; 
+        flex-wrap: wrap;     
+    }
+    
+    .btn-prova {
+        flex: 1 1 40%;     
+    }
+}
