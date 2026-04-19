@@ -1,0 +1,207 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+header {
+    background: #003366; 
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ita-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-area {
+    background: #C5A059; 
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-area:hover {
+    background: #a68546;
+}
+
+.hero {
+    height: 60vh;
+    background-image: linear-gradient(rgba(0,51,102,0.7), rgba(0,51,102,0.7)), url('imagens/campus-ita.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.btn-primary {
+    background: #C5A059;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.btn-secondary {
+    border: 2px solid white;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Cards */
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 50px 0;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 30px;
+    border-radius: 8px;
+    border-top: 5px solid #003366;
+    text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #003366;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.logo-container {
+    display: flex;       
+    align-items: center; 
+    gap: 15px;           
+}
+
+.logo-img {
+    height: 50px;        
+    width: auto;         
+}
+
+.ita-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    color: white;
+}
+/* Garante que o container da Hero seja o ponto de referência */
+.hero-container {
+    position: relative; /* Isso é essencial para a caixa flutuar aqui dentro */
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+/* Estilo da Caixa de Provas */
+.provas-box {
+    position: absolute;
+    top: 20px;          /* Distância do topo */
+    right: 0;           /* Cola na direita do container */
+    background: rgba(255, 255, 255, 0.95); /* Branco levemente transparente */
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #C5A059; /* Detalhe em dourado */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    width: 220px;
+    text-align: left;
+    color: #333;
+    z-index: 10;
+}
+
+.provas-box h3 {
+    font-size: 1.1rem;
+    color: #003366;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.provas-box ul {
+    list-style: none;
+}
+
+.provas-box ul li {
+    margin-bottom: 8px;
+}
+
+.provas-box ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.provas-box ul li a:hover {
+    color: #C5A059;
+    padding-left: 5px;
+}
