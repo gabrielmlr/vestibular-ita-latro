@@ -186,34 +186,14 @@ nav ul li a {
     font-family: 'Montserrat', sans-serif;
 }
 
-.provas-box ul {
-    list-style: none;
-}
-
-.provas-box ul li {
-    margin-bottom: 8px;
-}
-
-.provas-box ul li a {
-    text-decoration: none;
-    color: #555;
-    font-size: 0.9rem;
-    transition: 0.3s;
-}
-
-.provas-box ul li a:hover {
-    color: #C5A059;
-    padding-left: 5px;
-}
-/* Container dos botões */
 .provas-grid {
     display: flex;
-    flex-direction: column; /* Botões um embaixo do outro */
-    gap: 10px;             /* Espaçamento entre os botões */
+    flex-direction: column; 
+    gap: 10px;             
     margin-top: 15px;
 }
 
-/* Estilo individual do botão */
+
 .btn-prova {
     display: block;
     background-color: #f8f9fa;
@@ -228,15 +208,15 @@ nav ul li a {
     transition: all 0.3s ease;
 }
 
-/* Efeito ao passar o mouse */
+
 .btn-prova:hover {
     background-color: #003366;
     color: #ffffff;
     border-color: #003366;
-    transform: translateX(5px); /* Pequeno movimento para a direita */
+    transform: translateX(5px); 
 }
 
-/* Estilo especial para o "Ver todas" */
+
 .ver-todas {
     background-color: transparent;
     border: none;
